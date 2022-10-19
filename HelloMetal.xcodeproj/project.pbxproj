@@ -16,9 +16,12 @@
 		43ADD2BD1DD8DE1500ADA1E1 /* Matrix4.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ADD2BC1DD8DE1500ADA1E1 /* Matrix4.m */; };
 		43ADD2BF1DD8DE6B00ADA1E1 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADD2BE1DD8DE6B00ADA1E1 /* Vertex.swift */; };
 		43ADD2C11DD8DE9B00ADA1E1 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADD2C01DD8DE9B00ADA1E1 /* Node.swift */; };
-		43ADD2C31DD8DEF700ADA1E1 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADD2C21DD8DEF700ADA1E1 /* Triangle.swift */; };
 		43ADD2C51DD8E02B00ADA1E1 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADD2C41DD8E02B00ADA1E1 /* Cube.swift */; };
 		43ADD2C71DD8E8AC00ADA1E1 /* MySceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADD2C61DD8E8AC00ADA1E1 /* MySceneViewController.swift */; };
+		B3D37B5E28FFE7EB00E7F6DE /* BufferProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D37B5D28FFE7EB00E7F6DE /* BufferProvider.swift */; };
+		B3D37B6028FFF0F000E7F6DE /* MetalTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D37B5F28FFF0F000E7F6DE /* MetalTexture.swift */; };
+		B3D37B642900120300E7F6DE /* cube.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D37B632900120300E7F6DE /* cube.png */; };
+		B3D37B6629001AFA00E7F6DE /* InterpolationFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D37B6529001AFA00E7F6DE /* InterpolationFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +38,12 @@
 		43ADD2BC1DD8DE1500ADA1E1 /* Matrix4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Matrix4.m; sourceTree = "<group>"; };
 		43ADD2BE1DD8DE6B00ADA1E1 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
 		43ADD2C01DD8DE9B00ADA1E1 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		43ADD2C21DD8DEF700ADA1E1 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		43ADD2C41DD8E02B00ADA1E1 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 		43ADD2C61DD8E8AC00ADA1E1 /* MySceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySceneViewController.swift; sourceTree = "<group>"; };
+		B3D37B5D28FFE7EB00E7F6DE /* BufferProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferProvider.swift; sourceTree = "<group>"; };
+		B3D37B5F28FFF0F000E7F6DE /* MetalTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalTexture.swift; sourceTree = "<group>"; };
+		B3D37B632900120300E7F6DE /* cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube.png; sourceTree = "<group>"; };
+		B3D37B6529001AFA00E7F6DE /* InterpolationFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolationFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,21 +76,24 @@
 		435EC2701DD79D140010BAE0 /* HelloMetal */ = {
 			isa = PBXGroup;
 			children = (
+				B3D37B632900120300E7F6DE /* cube.png */,
 				43ADD2BB1DD8DE1500ADA1E1 /* Matrix4.h */,
 				43ADD2BC1DD8DE1500ADA1E1 /* Matrix4.m */,
 				435EC2831DD79EA60010BAE0 /* Shaders.metal */,
 				435EC2711DD79D140010BAE0 /* AppDelegate.swift */,
 				435EC2731DD79D140010BAE0 /* MetalViewController.swift */,
+				B3D37B5F28FFF0F000E7F6DE /* MetalTexture.swift */,
 				43ADD2C61DD8E8AC00ADA1E1 /* MySceneViewController.swift */,
 				43ADD2BE1DD8DE6B00ADA1E1 /* Vertex.swift */,
 				43ADD2C01DD8DE9B00ADA1E1 /* Node.swift */,
-				43ADD2C21DD8DEF700ADA1E1 /* Triangle.swift */,
 				43ADD2C41DD8E02B00ADA1E1 /* Cube.swift */,
 				435EC2751DD79D140010BAE0 /* Main.storyboard */,
 				435EC2781DD79D140010BAE0 /* Assets.xcassets */,
 				435EC27A1DD79D140010BAE0 /* LaunchScreen.storyboard */,
 				435EC27D1DD79D140010BAE0 /* Info.plist */,
 				43ADD2BA1DD8DE1400ADA1E1 /* HelloMetal-Bridging-Header.h */,
+				B3D37B5D28FFE7EB00E7F6DE /* BufferProvider.swift */,
+				B3D37B6529001AFA00E7F6DE /* InterpolationFunctions.swift */,
 			);
 			path = HelloMetal;
 			sourceTree = "<group>";
@@ -153,6 +162,7 @@
 			files = (
 				435EC27C1DD79D140010BAE0 /* LaunchScreen.storyboard in Resources */,
 				435EC2791DD79D140010BAE0 /* Assets.xcassets in Resources */,
+				B3D37B642900120300E7F6DE /* cube.png in Resources */,
 				435EC2771DD79D140010BAE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D37B6028FFF0F000E7F6DE /* MetalTexture.swift in Sources */,
+				B3D37B6629001AFA00E7F6DE /* InterpolationFunctions.swift in Sources */,
+				B3D37B5E28FFE7EB00E7F6DE /* BufferProvider.swift in Sources */,
 				435EC2841DD79EA60010BAE0 /* Shaders.metal in Sources */,
 				43ADD2BD1DD8DE1500ADA1E1 /* Matrix4.m in Sources */,
 				435EC2741DD79D140010BAE0 /* MetalViewController.swift in Sources */,
@@ -171,7 +184,6 @@
 				43ADD2C71DD8E8AC00ADA1E1 /* MySceneViewController.swift in Sources */,
 				43ADD2C51DD8E02B00ADA1E1 /* Cube.swift in Sources */,
 				43ADD2BF1DD8DE6B00ADA1E1 /* Vertex.swift in Sources */,
-				43ADD2C31DD8DEF700ADA1E1 /* Triangle.swift in Sources */,
 				435EC2721DD79D140010BAE0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
